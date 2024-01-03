@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!--main js file--> 
+    </head>
+    <body>
+        <!--Reponsive menu button-->
+        <i class="fa-solid fa-bars" id="MenuBtn" style="position: fixed; "></i>
+
+<!--HEADER START-->
+
+<header style="width:360px;text-align: center;border-bottom:2px dashed #1560bd;overflow: hidden;-ms-overflow-style: none; float:left; ">
+    <div class="dp" style="width:300px;text-align: center;border-bottom:2px dashed #1560bd;">
+        <a href="index.html"><i class="fa-solid fa-arrow-left" style="float:left; color:#1560bd;"></i></a>
+        <img style="width:250px;border-radius: 90%; box-shadow: 0 0 100px #1560bd;" src="img/logo final.png" alt="logo">
+        <h2 style="padding-bottom:12px;font-size:20px;font-weight:500;margin-top: 25px; letter-spacing: 1px;">ALEX POH</h2>
+        <p style="padding-bottom:15px;font-size:18px;font-weight: 400;margin-top: 10px;color: lightgray;">WEB DEVELOPER</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="digiart.html"  style="padding-right: 8rem;"><i class="fa-regular fa-images" style="padding-right: 0.8rem;"></i>Digital Art</a></li>
+            <li style="padding-right: 2.4rem;"><a href="WM_Design.html"class="active"><i class="fa-regular fa-images" style="padding-right: 0.8rem;"></i>Web/Mobile Design</a></li>
+            <li style="padding-right: 3rem;"><a href="WebDevelop.html" ><i class="fa-regular fa-images" style="padding-right: 0.8rem;"></i>Web Development</a></li>
+            <li style="padding-right: 8.8rem;"><a href="Others.html" ><i class="fa-regular fa-images" style="padding-right: 0.8rem;"></i>Others</a></li>
+        </ul>
+    </nav>
+    <div class="social-icon">
+        <a href="https://github.com/Aesxli"><i class="fa-brands fa-github" ></i></a>
+        <a href="https://www.linkedin.com/in/alex-poh-b62511277/"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</header>
+<main>
+<section id="work4" class="padding">
+    <p class="sub-title fade-in">Web Design</p>
+    <h2 class="title fade-in">Chef Delivers</h2>
+    <div class='about-row fade-in'>
+        <div class="info-col">
+            <div class='Dimg4' >
+                <video width="300" controls><source src="CD(1).mp4" type="video/mp4" style=" padding-bottom: 2rem;"></video>
+            </div>
+            <p class='sub-para' style="line-height: 2rem;">Using Adobe XD, I designed an food website that allos users to learn more about the company and sign in/sign up so that users can order and track their food. Users are also able to contact the company and get their social media.</p>
+        </div>
+        
+        
+    </div>
+</section>
+<section id="work5" class="padding">
+    <p class="sub-title fade-in">Mobile Design</p>
+    <div class="title-container fade-in">
+        <h2 class="title" style="margin-right: 10px;">TOUCH App</h2>
+    <i class="fa-solid fa-volume-high" style="font-size: 3rem;margin-bottom: 2rem; color: #1560bd;"></i>
+    </div>
+    <div class='about-row fade-in'>
+        <div class="info-col">
+            <div class='Dimg5' >
+                <video width="300" controls><source src="TOUCH.mp4" type="video/mp4"></video>
+            </div>
+            <p class='sub-para' style="line-height: 2rem;">Using Adobe XD, I designed how the interface of The TOUCH App would look like to the user without using any code to give me the general feel of what icons, buttons and features are in place and looks out of place. It also shows users how to cook the food, the ingredients needed to make the food and rates the final result that the user has.</p>
+        </div>
+        
+        
+    </div>
+</section>
+<section id="work6" class="padding">
+    <h2 class="title fade-in">NutriBros</h2>
+    <div class='about-row fade-in'>
+        <div class="info-col">
+            <div class='Dimg6' >
+                <video width="300" controls><source src="NutriBros.mp4" type="video/mp4" style=" padding-bottom: 2rem;" ></video>
+            </div>
+            <p class='sub-para' style="line-height: 2rem;">Using Adobe XD, Together with my teammates we designed an app that helps users manage their diet, after they sign up and log in they can learn how to prepare their meals, scan food products to see whether the food product provides the nutrients they need, talk to nutritionists and manage their account.</p>
+        </div>
+        
+        
+    </div>
+</section>
+
+</main>
+
+
+<!--Main Section END-->
+<!--Typing animation library-->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--main js file--> 
+<script>
+    window.onload = function () {
+        var elements = document.querySelectorAll('.fade-in');
+
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.5 });
+
+        elements.forEach(function (element) {
+            observer.observe(element);
+        });
+    };
+    </script>
+<script src="java.js"></script>
+</body>
+</html>
